@@ -1,0 +1,38 @@
+div {
+    border: dotted;
+    height: 100px;
+    width: 100px;
+    overflow: auto;
+    margin: 5px 8px;
+    padding: 6px 9px;
+}
+
+.p1 {
+    display: inline;
+    background-color: yellow;
+}
+
+span {
+    display: block;
+    background-color: grey;
+    margin-right: 1080px;
+}
+p {
+    font-size: 35px;
+}
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.azul {
+    border: solid 4px blue;
+    background-color: lightblue;
+}
+.amarelo {
+    border: solid 4px red;
+    background-color: yellow;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}

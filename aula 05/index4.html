@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de CSS - Regras</title>
+
+    <!--CSS Externo-->
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /*CSS interno*/
+        /*
+        h1 {
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 60px;
+        }*/
+        /* section {
+            background-color: brown;
+            width: 500px;
+            height: 500px;
+        }
+
+        section article p {
+            background-color: blueviolet;
+            font-size: 30px;
+        } */
+        /* section {
+            padding: 50px 30px 20px 60px;
+            margin-left: 40px;
+        }
+
+        section article {
+            background-color: #cccccc;
+            width: 500px;
+            height: 500px;
+        }
+
+        section article p {
+            line-height: 4;
+        } */
+        /* para usar o class no css tem que colocar "." e o nome da class */
+        .teste {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Olá Mundo</h1>
+    <!--CSS Inline-->
+    <p style="color:aqua;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Lorem ipsum dolor
+        sit amet.</p>
+    <section>
+        <article>
+            <h2> Título </h2>
+            <!-- class é para facilitar o uso do CSS e não selecionar bloco -->
+            <p class="teste"> Lorem ipsum dolor sit amet, consectetur dipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Utenim ad minim veniam, quis nostrud exercitation ullamco labor
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+    </section>
+
+
+</body>
+
+</html>

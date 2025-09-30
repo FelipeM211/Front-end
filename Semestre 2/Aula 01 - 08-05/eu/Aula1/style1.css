@@ -1,0 +1,52 @@
+/* .grid { 
+    display: grid;
+    /* 2 colunas 
+    grid-template-columns: 300px 100px;
+    /* 2 linhas 
+    grid-template-rows: 40px 100px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr; 
+
+    gap: 10px; /* aplica em todas as lacunas 
+    column-gap: 10px; /* aplica somente entre as colunas 
+    row-gap: 15px; /* aplica somente entre as linhas 
+
+    
+} */
+
+.grade {
+    display:grid;
+    grid-template-areas:
+        "nav header header"
+        "nav produtos publicidade"
+        "nav servicos publicidade"
+        "nav footer footer";
+    grid-template-rows:100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+section#produtos {
+    grid-area: produtos;
+}
+section#servicos {
+    grid-area: servicos;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidade;
+}

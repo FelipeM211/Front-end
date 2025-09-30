@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Animações</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <!-- <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            fade: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-3deg)' },
+              '50%': { transform: 'rotate(3deg)' },
+            },
+          },
+          animation: {
+            fade: 'fade 1s ease-in-out infinite',
+            wiggle: 'wiggle 0.5s ease-in-out infinite',
+          },
+        }
+      }
+    }
+  </script> -->
+
+  <!-- <style type="text/tailwindcss">
+    @layer utilities {
+      @keyframes fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes wiggle {
+        0%, 100% { transform: rotate(-2deg); }
+        50% { transform: rotate(2deg); }
+      }
+      .animate-fade {
+        animation: fade 1s ease-in-out infinite;
+      }
+      .animate-wiggle {
+        animation: wiggle 0.5s ease-in-out infinite;
+      }
+    }
+  </style> -->
+</head>
+
+<body class="p-8 space-y-6">
+  <!-- 1 -> 0.25rem -> 4px (logo 4 -> 1rem -> 16px) -->
+  <button class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out">
+    Clique Suave
+  </button>
+
+  <div class="w-10 h-10 bg-blue-500 rounded-full animate-bounce"></div>
+
+  <div class="p-4 bg-green-300 rounded animate-fade w-20">Fade</div>
+
+  <button class="animate-wiggle">Treme</button>
+
+  <div class="animate-wiggle w-40 h-10 bg-green-500 rounded-full"></div>
+  <div class="animate-fade w-10 h-10 bg-yellow-400 rounded-full"></div>
+
+  <p>Lorem500</p>
+
+  <div class="opacity-0 transition-opacity duration-700 w-40 bg-blue-500 p-4 rounded-md" data-observe>
+    Aparece ao rolar!
+  </div>
+
+  <p>Lorem500</p>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100');
+        }
+      });
+    });
+    document.querySelectorAll('[data-observe]').forEach(el => observer.observe(el));
+  </script>
+
+  <button onclick="document.getElementById('alerta').classList.remove('hidden')"
+    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+    Mostrar Alerta
+  </button>
+
+  <div id="alerta" class="hidden w-80 mt-4 p-4 bg-red-100 text-red-800 rounded animate-fade">
+    ⚠️ Isso é um alerta animado!
+  </div>
+</body>
+</html>

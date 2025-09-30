@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 02</title>
+</head>
+
+<body>
+    <h1 id="topo">inicio</h1>
+    <!--Lista não ordenada (type para mudar o estilo do marcador)-->
+    <ul type="circle">
+        <li>Empresa</li>
+        <li>Produto</li>
+        <li>Serviços</li>
+        <li>Contato</li>
+    </ul>
+    <!--Criar uma linha horizontal-->
+    <hr>
+    <!--Lista ordenada (type para mudar o estilo do marcador e start para de onde começar)-->
+    <ol type="A" start="1">
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ol>
+    <hr>
+    <!--Exemplo pratico:-->
+    <div>
+        <h1>Titulo</h1>
+        <h2>Semi-Titulo</h2>
+        <!--Para Criar listas automatico: ul>li*3>lorem-->
+        <!--para ul: type="disc" "square" "circle"-->
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Omnis in consequatur non aliquam ut.</li>
+            <li>Quasi incidunt ratione voluptates a nisi.</li>
+            <li>Repudiandae nesciunt quis error nam minima.</li>
+            <li>Corrupti, voluptatem. Omnis porro mollitia velit?</li>
+        </ul>
+        <h2>Semi-Titulo</h2>
+        <!--para ol: type="a" "A" "i" "I" start="x"-->
+        <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis harum amet</li>
+            <li>Eos voluptates, molestias illum ullam nisi esse eum praesentium, odio</li>
+            <li>Labore neque consequatur qui vero molestiae voluptate,</li>
+        </ol>
+    </div>
+    <hr>
+    <!-- <dl> define uma lista de definições-->
+    <dl>
+        <!--<dt> define um termo da lista-->
+        <dt>Termo</dt>
+        <!--<dd> define uma descrição da lista-->
+        <dd>
+            descrição
+        </dd>
+    </dl>
+    <hr>
+    <table border="1"> <!--border para colocar borda na tabela-->
+        <tr><!--primeira linha-->
+            <th colspan="3">Dados Pessoais</th> <!--colspan para o "titulo" ocupar mais de uma coluna-->
+            <th>RM</th>
+        </tr>
+        <tr><!--segunda linha-->
+            <td>Felipe Murad</td>
+            <td>21</td>
+            <td>Masculino</td>
+            <td>562347</td>
+        </tr>
+        <tr> <!--terceira linha-->
+            <td>Lucas</td>
+            <td>18</td>
+            <td>Masculino</td>
+            <td>562348</td>
+        </tr>
+    </table>
+    <hr>
+    <!--criar hyper link-->
+    <!--o que esta entre aspas é o link e o que esta depois é o que vai aparecer para o usuario-->
+    <a href="Aula_02_ex1.html">Exemplo 1 aula 02</a>
+
+    <!--para achar o arquivo em outra pastas colocar pages dentro das aspas-->
+    <a href="pages/Aula_02_ex2.html">exemplo 2 aula 02</a>
+
+    <!--target="_blank" para abrir o link em outra aba-->
+    <a href="http://google.com" target="_blank">google</a>
+
+    <!--#topo dentro do href faz com que ao clicar o usuario va para o inicio da pagina (tem que coloca o id la em cima tb)-->
+    <a href="#topo">Vá para o inicio</a>
+</body>
+
+</html>

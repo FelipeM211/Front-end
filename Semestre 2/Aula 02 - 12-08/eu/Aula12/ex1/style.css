@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "content content content"
+        "sidebar sidebar sidebar"
+
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+}
+content{
+    grid-area: content;
+    background-color: red;
+}
+sidebar{
+    grid-area: sidebar;
+    background-color:green
+}
+
+@media screen and (min-width: 1280px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "header header header"
+        "content content sidebar"
+    }
+}
+    

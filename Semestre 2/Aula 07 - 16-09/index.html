@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button class="bg-blue-500 hover:bg-blue-700 focus:ring-4 active:bg-blue-900 text-white font-bold py-2 px-4 rounded">
+    Interaja comigo
+    </button>
+    
+    <div class="group p-4 bg-gray-100 hover:bg-gray-200 rounded-lg">
+        <h2 class="text-lg font-bold group-hover:text-blue-500">Título</h2>
+        <p class="group-hover:underline">Texto ao passar o mouse</p>
+    </div>
+
+    <div>
+        <input type="checkbox" id="mostrar" class="peer hidden" />
+        <label for="mostrar" class="cursor-pointer text-blue-500">Mostrar mensagem</label>
+    <div class="mt-2 hidden peer-checked:block text-green-600">
+        Checkbox marcado! 🎉
+    </div>
+    </div>
+</body>
+</html>

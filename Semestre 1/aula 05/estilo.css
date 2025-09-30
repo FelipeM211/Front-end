@@ -1,0 +1,11 @@
+/*seletor em css pode ser: tag, class ou id */
+/*seletor {
+    propriedade1: valor;
+    propriedade2: valor;
+}*/
+
+h1 {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}

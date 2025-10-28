@@ -32,6 +32,7 @@ function App() {
             <Route path="/sobre" element={<Sobre />} />
             {/* Rota para a página Contato */}
             <Route path="/contato" element={<Contato />} />
+            <Route path='/NotFound' element={<NotFound/>}/>
           </Routes>
         </div>
       </div>

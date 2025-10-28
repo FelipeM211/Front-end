@@ -3,6 +3,7 @@ import Menu from './components/Menu';  // Importando o componente Menu
 import Home from './pages/Home';  // Página Home
 import Sobre from './pages/Sobre';  // Página Sobre
 import Contato from './pages/Contato';  // Página Contato
+import NotFound from './pages/NotFound.jsx';  // Página Not Found
 
 function App() {
   return (
